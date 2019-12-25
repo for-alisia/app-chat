@@ -1,0 +1,67 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%; //for 16px standart font
+}
+
+body {
+    box-sizing: border-box;
+    background-color: $color_bg_dark;
+    padding: 2rem;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    padding: 1rem;
+    box-sizing: border-box;
+    color: $color_light;
+}
+
+.btn {
+    color: $color_light;
+    background-color: $color_blue;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 0.6rem;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken($color_blue, 20%);
+        transform: translateY(0.1rem);
+    }
+}
+
+.btn.secondary-btn {
+    background-color: transparent;
+    text-transform: uppercase;
+    color: $color_blue;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color: $color_light;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.7;
+}
+
+.display-none {
+    display: none;
+}

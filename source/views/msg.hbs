@@ -1,0 +1,16 @@
+<div class="message__wrapper">
+    <div class="message__ava">
+        {{#if ava}}
+        <img src="{{ava}}" alt="default-photo" title="{{authorNickName}}({{authorName}})">
+        {{else}}
+        <img src=" img/camera_icon.png" alt="default-photo" title="{{authorNickName}}({{authorName}})">
+        {{/if}}
+    </div>
+    <div class="message__container">
+        <div class="message__block">
+            <span class="message__author">{{authorNickName}} ({{authorName}})</span>
+            <span class="message__text">{{msgText}}</span>
+            <span class="message__date">{{msgDate}}</span>
+        </div>
+    </div>
+</div>

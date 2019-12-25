@@ -1,0 +1,13 @@
+<div class="card">
+    <div class="card__photo">
+        {{#if ava}}
+        <img src="{{ava}}" alt="default-photo" class="card__img">
+        {{else}}
+        <img src="img/camera_icon.png" alt="default-photo" class="card__img">
+        {{/if}}
+    </div>
+    <div class="card__desc">
+        <p class="card__name">{{nickName}}</p>
+        <p class="card__msg">{{name}}</p>
+    </div>
+</div>

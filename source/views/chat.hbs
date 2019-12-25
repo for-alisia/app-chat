@@ -1,0 +1,33 @@
+<section id="chat" data-user="{{name}}" class="container">
+    <div class="aside">
+        <div class="aside__header">
+            <nav class="aside__nav">
+                <icon class="aside__navicon">
+                    <img src="img/menu_icon.png" alt="menu here">
+                </icon>
+            </nav>
+            <div class="aside__search">
+                <input type="text" class="aside__input" name="search" id="search" placeholder="Найти..." />
+            </div>
+        </div>
+        <ul class="aside__list">
+        </ul>
+    </div>
+    <div class="main">
+        <div class="main__header">
+            <div class="main__header-content">
+                <h2 class="main__title">Чат</h2>
+                <p class="main__qty"></p>
+            </div>
+            <button class="btn secondary-btn" id="logOut">Покинуть чат</button>
+        </div>
+        <div class="main__msg"></div>
+        <div class="main__footer">
+            <form class="main__form">
+                <input type="text" name="message" id="message" class="main__input" placeholder="Введите сообщение...">
+                <button class="main__button btn" id="sendMsg">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <div class="photo-popup" id="photo-popup"></div>
+</section>

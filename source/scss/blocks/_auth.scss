@@ -1,0 +1,80 @@
+.auth {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $color_bg_medium;
+    width: 50rem;
+    padding: 5rem 0;
+
+    &__close {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        cursor: pointer;
+    }
+
+    &__container {
+        width: 30rem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 14rem;
+        height: 14rem;
+        border-radius: 50%;
+        background-color: $color_bg_light;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3.2rem;
+    }
+
+    &__header {
+        margin-bottom: 4.5rem;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 2.4rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    &__clue {
+        text-align: center;
+        color: $color_medium;
+    }
+
+    &__form {
+        width: 100%;
+        text-align: center;
+    }
+
+    &__input {
+        display: block;
+        width: 100%;
+        border-bottom: 2px solid $color_bg_light;
+        margin-bottom: 4rem;
+        color: $color_light;
+
+        &:focus {
+            border-bottom: 2px solid $color_blue;
+        }
+    }
+
+    &__btn {
+        padding: 0.8rem 4rem;
+    }
+
+    &__tooltip {
+        text-align: left;
+        margin-bottom: 3rem;
+        margin-top: -3rem;
+        color: $color_error;
+        font-size: 1.2rem;
+    }
+}
