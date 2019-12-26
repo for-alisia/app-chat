@@ -112,7 +112,10 @@ const handlers = {
     // Получение добавленного фото с сервера
     newPhoto: (msg, page, qty, isAuthor, author) => {
         const userList = page.querySelector('.aside__list');
+        const msgContainer = page.querySelector('.main__msg');
+
         addPhotoToList(author, userList);
+        addPhotoToMsg(author, msgContainer);
     },
     getMsgs: (msgList, page, qty, isAuthor, author) => {
         const msgContainer = page.querySelector('.main__msg');
@@ -247,4 +250,18 @@ function addMessage(msg, msgContainer, isAuthor, author) {
     } else {
         createMsg(msg, isAuthor, author, msgContainer);
     }
+}
+
+// Функция, добавляющая фото в сообщения юзера
+function addPhotoToMsg(author, msgContainer) {
+    const msgs = msgContainer.querySelectorAll('.message');
+
+    msgs.forEach(msg => {
+        if (msg.dataset.userId == author.id) {
+            const avaBlock = msg.querySelector('.message__ava');
+            const img = avaBlock.querySelector('img');
+
+            img.src = author.ava;
+        }
+    });
 }
